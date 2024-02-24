@@ -45,6 +45,12 @@ const music_list = [
     artist: "Mono",
     music: "music/emxinh.mp3",
   },
+  {
+    img: "images/vietdung.jpeg",
+    name: "Biết Đâu Sẽ Mất (BDSM)",
+    artist: " Kejo aka Hoang Viet Dung",
+    music: "music/bdsm.mp3",
+  },
 ];
 
 loadTrack(track_index);
@@ -163,10 +169,10 @@ function prevTrack() {
   loadTrack(track_index);
   playTrack();
 }
-function seekTo() {
-  let seekto = curr_track.duration * (seek_slider.value / 100);
-  curr_track.currentTime = seekto;
-}
+// function seekTo() {
+//   let seekto = curr_track.duration * (seek_slider.value / 100);
+//   curr_track.currentTime = a;
+// }
 function setVolume() {
   curr_track.volume = volume_slider.value / 100;
 }
